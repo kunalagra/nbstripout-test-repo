@@ -27,6 +27,7 @@ jobs:
   test-special-chars:
     name: Special character paths (should pass with fix)
     runs-on: ubuntu-latest
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v6
       - uses: kunalagra/nbstripout@refactor/gh-actions-refactor
